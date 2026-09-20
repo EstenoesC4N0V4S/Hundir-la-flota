@@ -1,0 +1,244 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  background: linear-gradient(180deg, #087ea4, #075985);
+
+  color: #ffffff;
+
+  font-family: Arial, sans-serif;
+}
+
+/* Contenedor */
+
+.game-container {
+  width: 100%;
+  max-width: 270px;
+  margin: 0 auto;
+}
+
+/* Título */
+
+.title-icon {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+
+p {
+  font-size: 0.6rem;
+  margin-bottom: 0;
+  opacity: 0.85;
+}
+
+/* Estadísticas */
+
+.stat-card {
+  padding: 4px 2px;
+
+  text-align: center;
+
+  background: rgba(255, 255, 255, 0.13);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  border-radius: 6px;
+
+  backdrop-filter: blur(5px);
+}
+
+.stat-card i {
+  display: block;
+
+  font-size: 0.7rem;
+
+  margin-bottom: 0;
+}
+
+.stat-card span {
+  display: block;
+
+  font-size: 0.48rem;
+
+  opacity: 0.8;
+}
+
+.stat-card strong {
+  display: block;
+
+  font-size: 0.75rem;
+}
+
+/* Mensaje */
+
+.game-message {
+  padding: 5px 6px;
+
+  margin-bottom: 6px;
+
+  text-align: center;
+
+  font-size: 0.58rem;
+
+  border-radius: 5px;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Tablero */
+
+.game-board {
+  width: 220px;
+  max-width: 100%;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(8, 1fr);
+
+  gap: 2px;
+
+  padding: 5px;
+
+  background: rgba(0, 50, 80, 0.55);
+
+  border: 2px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 8px;
+
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Casillas */
+
+.cell {
+  width: 100%;
+
+  aspect-ratio: 1;
+
+  padding: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  border-radius: 2px;
+
+  background: #159ac1;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  font-size: 0.65rem;
+
+  transition:
+    transform 0.1s,
+    background-color 0.15s;
+}
+
+/* Hover */
+
+.cell:hover:not(:disabled) {
+  transform: scale(0.9);
+
+  background: #32b5d7;
+}
+
+/* Agua */
+
+.cell.water {
+  background: #159ac1;
+}
+
+/* Acierto */
+
+.cell.hit {
+  background: #dc3545;
+
+  border-color: #ff7b85;
+
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
+}
+
+.cell.hit i {
+  font-size: 0.7rem;
+}
+
+/* Fallo */
+
+.cell.miss {
+  background: #087ca1;
+}
+
+.cell.miss i {
+  font-size: 0.65rem;
+}
+
+/* Barco */
+
+.cell.ship {
+  background: #183b4d;
+
+  border-color: #6fd3e8;
+}
+
+.cell.ship i {
+  font-size: 0.7rem;
+}
+
+/* Casillas desactivadas */
+
+.cell:disabled {
+  cursor: default;
+}
+
+/* Botón */
+
+.restart-button {
+  padding: 4px 11px;
+
+  color: #ffffff;
+
+  background: rgba(255, 255, 255, 0.15);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  border-radius: 5px;
+
+  font-size: 0.6rem;
+
+  transition:
+    background-color 0.2s,
+    color 0.2s;
+}
+
+.restart-button:hover {
+  color: #075985;
+
+  background: #ffffff;
+}
+
+/* Móvil */
+
+@media (max-width: 400px) {
+  .game-container {
+    max-width: 250px;
+  }
+
+  .game-board {
+    width: 205px;
+  }
+}
