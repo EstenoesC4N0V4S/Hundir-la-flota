@@ -1,4 +1,3 @@
-
 # 🚢 Hundir la Flota
 
 Juego clásico de **Hundir la Flota** desarrollado con **HTML5, CSS3, JavaScript y Bootstrap**.
@@ -47,7 +46,13 @@ Hundir-la-Flota/
     └── script.js
 ```
 
-## 🚀 Ejecutar el proyecto
+## 🚀 Demo online
+
+Puedes probar el juego directamente desde el navegador:
+
+👉 **[🎮 Jugar a Hundir la Flota](https://estenoesc4n0v4s.github.io/Hundir-la-flota/)**
+
+## 💻 Ejecutar el proyecto
 
 No necesita instalación ni servidor.
 
@@ -86,7 +91,7 @@ Algunas posibles mejoras son:
 
 ## 👨‍💻 Autor
 
-**Rodrigo**
+**Rodrigo Cánovas**
 
 Proyecto desarrollado como parte de mi **portfolio de desarrollo web**.
 
